@@ -1,5 +1,6 @@
 # Rocket League Replay Parser for NodeJS
-A NodeJS Parser for Rocket League Replay Files. \
+A NodeJS Parser for Rocket League Replay Files.
+
 It is a port of [jjbots](https://github.com/jjbott) awesome .Net library for [Rocket League Replays](https://github.com/jjbott/RocketLeagueReplayParser).
 
 ## Features
