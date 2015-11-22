@@ -15,6 +15,6 @@ fs.readFile(testfile, function(err, buf) {
 	// Parse replay file
 	var parsedReplay = Parser.parse(buf);
 
-	// Plain pared replay only
+	// Plain parsed replay only
 	console.log(require('util').inspect(parsedReplay, { depth: null }));
 });
