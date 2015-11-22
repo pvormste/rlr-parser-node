@@ -15,6 +15,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "rocket",
+    "league",
+    "parser",
+    "deserializer",
+    "replay"
+  ],
   "author": "Patric Vormstein",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pvormste/rlr-parser-node.git"
+  },
+  "bugs": "https://github.com/pvormste/rlr-parser-node.git/issues"
 }
