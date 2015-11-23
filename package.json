@@ -1,6 +1,6 @@
 {
   "name": "rlr-parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Rocket League Replay Parser for NodeJS",
   "main": "lib/rocket_league_replay.js",
   "directories": {
