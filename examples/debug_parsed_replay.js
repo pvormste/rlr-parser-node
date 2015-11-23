@@ -1,6 +1,5 @@
 var fs = require('fs');
-var Parser = require('../lib/rocket_league_parser.js');
-var Replay = require('../lib/rocket_league_replay.js').Replay;
+var RocketLeagueParser = require('../lib/rocket_league_replay.js').Parser;
 
 testfile = './test/replays/002E80F0452C36768F041E998A1C2C18.replay';
 //testfile2 = './test/4A5B13DA4D3C650D729A98B85D350FF7.replay';
@@ -13,7 +12,7 @@ fs.readFile(testfile, function(err, buf) {
 	}
 
 	// Parse replay file
-	var parsedReplay = Parser.parse(buf);
+	var parsedReplay = RocketLeagueParser.parse(buf);
 
 	// Plain parsed replay only
 	console.log(require('util').inspect(parsedReplay, { depth: null }));

@@ -1,5 +1,5 @@
 var fs = require('fs');
-var Parser = require('../lib/rocket_league_parser.js');
+var RocketLeagueParser = require('../lib/rocket_league_replay.js').Parser;
 var Replay = require('../lib/rocket_league_replay.js').Replay;
 
 testfile = './test/replays/002E80F0452C36768F041E998A1C2C18.replay';
@@ -13,7 +13,7 @@ fs.readFile(testfile, function(err, buf) {
 	}
 
 	// Parse replay an rebuild it beautifully
-	var parsedReplay = Parser.parse(buf);
+	var parsedReplay = RocketLeagueParser.parse(buf);
 	var replay = new Replay(parsedReplay);
 
 	// Debug it
