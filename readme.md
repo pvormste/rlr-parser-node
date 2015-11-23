@@ -31,7 +31,7 @@ fs.readFile(replayfile, function(err, buffer) {
 });
 ```
 
-or
+or (using it modular):
 
 ```js
 var RocketLeagueParser = require('lib/rocket_league_replay.js').Parser;
