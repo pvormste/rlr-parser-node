@@ -1,4 +1,6 @@
 # Rocket League Replay Parser for NodeJS
+[![npm version](https://badge.fury.io/js/rlr-parser.svg)](https://badge.fury.io/js/rlr-parser)
+
 A NodeJS Parser for Rocket League Replay Files.
 
 It is a port of [jjbots](https://github.com/jjbott) awesome .Net library for [Rocket League Replays](https://github.com/jjbott/RocketLeagueReplayParser).
@@ -13,12 +15,18 @@ It is a port of [jjbots](https://github.com/jjbott) awesome .Net library for [Ro
 * Parse key frame data
 * Parse network data
 
+## Installation
+
+```
+$ npm install rlr-parser
+```
+
 ## Usage
 
 There are two ways to use the parser:
 
 ```js
-var Replay = require('lib/rocket_league_replay.js').Replay;
+var Replay = require('rlr-parser').Replay;
 
 // Replay file location C:\ ... \Documents\my games\Rocket League\TAGame\Demos
 var replayfile = 'path/to/replayfile.replay';
@@ -34,8 +42,8 @@ fs.readFile(replayfile, function(err, buffer) {
 or (using it modular):
 
 ```js
-var RocketLeagueParser = require('lib/rocket_league_replay.js').Parser;
-var Replay = require('lib/rocket_league_replay.js').Replay;
+var RocketLeagueParser = require('rlr-parser').Parser;
+var Replay = require('rlr-parser').Replay;
 
 // Replay file location C:\ ... \Documents\my games\Rocket League\TAGame\Demos
 var replayfile = 'path/to/replayfile.replay';
