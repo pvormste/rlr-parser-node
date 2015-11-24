@@ -34,7 +34,7 @@ var replayfile = 'path/to/replayfile.replay';
 fs.readFile(replayfile, function(err, buffer) {
 	// Create a Replay object directly from buffer
 	var replay = new Replay.fromBuffer(buffer);
-  // Print the result
+  	// Print the result
 	console.log(require('util').inspect(replay, { depth: null }));
 });
 ```
@@ -53,13 +53,13 @@ fs.readFile(replayfile, function(err, buffer) {
 	var parsedReplay = RocketLeagueParser.parse(buffer);
 	// Convert it then in a more usable way
 	var replay = new Replay(parsedReplay);
-  // Print the result
+	// Print the result
 	console.log(require('util').inspect(replay, { depth: null }));
 });
 ```
 
 
-## Issue
+## Issues
 * On old replay files, the player list is not part of the properties section. It must be read from network stream.
 
 ## Author
